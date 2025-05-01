@@ -7,7 +7,7 @@ const port = 3000;
 const broker = "mqtt://mqtt.flespi.io";
 const topic = "restaurant/scanner/input";
 const token =
-  "BfNjPf35CflUrLjsyN8SmlCNPfHbBrxisSIPvginGb0FI4JeUhOVxwHneAk76cf7"; // Replace with actual token
+  "9VyYmnSjnJEmvpT9DE2SABY4qQPGcdAnlbdLjPyuNtm0aZACQLkhQSjKJ8cAhKBE"; // Replace with actual token
 
 // Connect to Flespi MQTT broker
 const client = mqtt.connect(broker, {

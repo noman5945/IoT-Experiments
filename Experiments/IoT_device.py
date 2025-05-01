@@ -5,7 +5,7 @@ import time
 broker = "mqtt.flespi.io"
 port = 1883
 topic = "restaurant/scanner/input"
-username = "BfNjPf35CflUrLjsyN8SmlCNPfHbBrxisSIPvginGb0FI4JeUhOVxwHneAk76cf7"  # Replace this
+username = "9VyYmnSjnJEmvpT9DE2SABY4qQPGcdAnlbdLjPyuNtm0aZACQLkhQSjKJ8cAhKBE"  # Replace this
 
 client = mqtt.Client()
 client.username_pw_set(username)
