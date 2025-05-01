@@ -7,6 +7,9 @@ port = 1883
 topic = "restaurant/scanner/input"
 username = "9VyYmnSjnJEmvpT9DE2SABY4qQPGcdAnlbdLjPyuNtm0aZACQLkhQSjKJ8cAhKBE"  # Replace this
 
+random_ID="prod-" + str(time.time_ns())[7:]
+this_box_ID="123-456"
+
 client = mqtt.Client()
 client.username_pw_set(username)
 
@@ -15,7 +18,7 @@ print("📡 Connected to Flespi MQTT broker")
 
 while True:
     payload = {
-        "productId": "prod-" + str(time.time_ns())[7:],
+        "productId": this_box_ID,
         "timestamp": time.strftime('%Y-%m-%d %H:%M:%S')
     }
 
